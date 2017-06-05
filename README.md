@@ -6,8 +6,11 @@
 Germanvalid - A php tool to check the validity of any: 
 
 (A) geographically based phone numbers in Germany
-(B) non geographically based phone numbers in Germany 
+
+(B) non geographically based phone numbers in Germany
+
 (C) private mobile operators phone numbers in Germany
+
 (D) emergency and services based phone numbers in Germany 
 
 To understand the regulation of telephone numbers in Germany under the responsability of 
