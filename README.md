@@ -1,6 +1,5 @@
-1) INTRODUCTION
+1.INTRODUCTION
 ----------------
-
 Germanvalid - A php tool to check the validity of any: 
 
 (A) geographically based phone numbers in Germany
@@ -17,12 +16,12 @@ for (A), (B), (C) and (D), take a careful look at:
 
 https://en.wikipedia.org/wiki/Telephone_numbers_in_Germany
 
-2) INSTALLATION
+2.INSTALLATION
 ----------------
 
 in your project root folder: git clone https://github.com/KB-WEB-DEVELOPMENT/Germanvalid.git projectname
 
-3) USAGE
+3.USAGE
 ---------
 
 Note that the string input can be entered with empty spaces, parentheses, dashes, points, etc ... all
