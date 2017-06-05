@@ -33,8 +33,7 @@ non-digits characters are removed before the validity of the phone number is eva
 3.1) validate_geo_number(STRING $input)
 -----------------------------------------
 
-    <?php
-	
+    <?php	
          // in file: Germanvalid.php
 
 	$validator =  new Germanvalid();
@@ -49,56 +48,44 @@ non-digits characters are removed before the validity of the phone number is eva
 3.2) validate_non_geo(STRING $input)
 -------------------------------------
 
-<?php
+	<?php
+		// in file: Germanvalid.php
 
-// in file: Germanvalid.php
+		$validator =  new Germanvalid();
 
-$validator =  new Germanvalid();
+		echo $validator->validate_non_geo("01371234567894"); // output: 1 (TRUE)
 
-echo $validator->validate_non_geo("01371234567894"); // output: 1 (TRUE)
+		echo "<br/>";
 
-echo "<br/>";
-
-echo $validator->validate_non_geo("0137123456789");  // output: 0 (FALSE)
-
-?>
+		echo $validator->validate_non_geo("0137123456789");  // output: 0 (FALSE)
+	?>
 
 3.3) validate_mobile_operator(STRING  $input)
 ----------------------------------------------
 
-<?php
+	<?php
+		// in file: Germanvalid.php
 
-// in file: Germanvalid.php
+		$validator =  new Germanvalid();
 
-$validator =  new Germanvalid();
+		echo $validator->validate_mobile_operator("015203917799") // output: 1 (TRUE)
 
-echo $validator->validate_mobile_operator("015203917799") // output: 1 (TRUE)
+		echo "<br/>";
 
-echo "<br/>";
-
-echo $validator->validate_mobile_operator("15203917799") // output: 0 (FALSE)
-
-
-?>
+		echo $validator->validate_mobile_operator("15203917799") // output: 0 (FALSE)
+	?>
 
 3.4) validate_emergency(STRING $input)
 ---------------------------------------
 
-<?php
+	<?php
+		// in file: Germanvalid.php
 
-// in file: Germanvalid.php
+		$validator =  new Germanvalid();
 
-$validator =  new Germanvalid();
+		echo $validator->validate_emergency("11800"); // output: 1 (TRUE)
 
-echo $validator->validate_emergency("11800"); // output: 1 (TRUE)
+		echo "<br/>";
 
-echo "<br/>";
-
-echo $validator->validate_emergency("118000"); // output: 0 (FALSE)
-
-
-?>
-
-
-
-
+		echo $validator->validate_emergency("118000"); // output: 0 (FALSE)
+	?>
