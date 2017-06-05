@@ -1,0 +1,10 @@
+{
+	"name": "KB-WEB-DEVELOPMENT/Germanvalid",
+	"description": "PHP tool to determine if a user submitted input matches any of (1) geographic (2) non-geographic (3) mobile operators (4) emergency and services PHONE NUMBERS IN GERMANY",
+	"keywords": ["PHP","Germany", "Deutschland", "phone number","geographic","non-geographic","mobile","tool", "plugin"],
+	"homepage": "https://github.com/KB-WEB-DEVELOPMENT/Germanvalid",
+	"license": "GPL-3.0",
+	"autoload": {
+		"classmap": ["src/"]
+	}
+}
