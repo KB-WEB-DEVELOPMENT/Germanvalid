@@ -30,7 +30,7 @@ non-digits characters are removed before the validity of the phone number is eva
 3.1) validate_geo_number(STRING $input)
 -----------------------------------------
 
-    	<?php	
+    <?php	
          	// in file: Germanvalid.php
 
 		$validator =  new Germanvalid();
@@ -40,7 +40,7 @@ non-digits characters are removed before the validity of the phone number is eva
 		echo "<br/>";
 
 		echo $validator->validate_geo_number("8992396655") // output: 0 (FALSE)
-    	?>
+    ?>
 
 3.2) validate_non_geo(STRING $input)
 -------------------------------------
