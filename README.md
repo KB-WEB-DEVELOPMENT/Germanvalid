@@ -1,5 +1,3 @@
-# Germanvalid
-
 1) INTRODUCTION
 ----------------
 
@@ -20,12 +18,12 @@ for (A), (B), (C) and (D), take a careful look at:
 https://en.wikipedia.org/wiki/Telephone_numbers_in_Germany
 
 2) INSTALLATION
-------------------
+----------------
 
 in your project root folder: git clone https://github.com/KB-WEB-DEVELOPMENT/Germanvalid.git projectname
 
-3) USAGE 
-----------
+3) USAGE
+---------
 
 Note that the string input can be entered with empty spaces, parentheses, dashes, points, etc ... all
 non-digits characters are removed before the validity of the phone number is evaluated.
@@ -33,17 +31,17 @@ non-digits characters are removed before the validity of the phone number is eva
 3.1) validate_geo_number(STRING $input)
 -----------------------------------------
 
-    <?php	
-         // in file: Germanvalid.php
+    	<?php	
+         	// in file: Germanvalid.php
 
-	$validator =  new Germanvalid();
+		$validator =  new Germanvalid();
 
-	echo $validator->validate_geo_number("08992396655") // output: 1 (TRUE)
+		echo $validator->validate_geo_number("08992396655") // output: 1 (TRUE)
 
-	echo "<br/>";
+		echo "<br/>";
 
-	echo $validator->validate_geo_number("8992396655") // output: 0 (FALSE)
-    ?>
+		echo $validator->validate_geo_number("8992396655") // output: 0 (FALSE)
+    	?>
 
 3.2) validate_non_geo(STRING $input)
 -------------------------------------
