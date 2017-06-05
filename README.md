@@ -11,7 +11,7 @@ Germanvalid - A php tool to check the validity of any:
 (D) emergency and services based phone numbers in Germany 
 
 To understand the regulation of telephone numbers in Germany under the responsability of 
-the Federal Network Agency (German: Bundesnetzagentur, BNetzA - run by the German government).
+the Federal Network Agency (German: Bundesnetzagentur, BNetzA - run by the German government)
 for (A), (B), (C) and (D), take a careful look at:
 
 https://en.wikipedia.org/wiki/Telephone_numbers_in_Germany
@@ -24,7 +24,7 @@ in your project root folder: git clone https://github.com/KB-WEB-DEVELOPMENT/Ger
 3.USAGE
 ---------
 
-Note that the string input can be entered with empty spaces, parentheses, dashes, points, etc ... all
+Note that the string input can be entered with empty spaces, parentheses, dashes, dots, etc ... all
 non-digits characters are removed before the validity of the phone number is evaluated.
 
 3.1) validate_geo_number(STRING $input)
