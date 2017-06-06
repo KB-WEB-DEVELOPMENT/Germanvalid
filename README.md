@@ -2,7 +2,7 @@
 ----------------
 Germanvalid - A php tool to check the validity of any: 
 
-(A) geographically based phone numbers in Germany
+(A) geographically based phone numbers in Germany (entered with or without the geographical zone number)
 
 (B) non geographically based phone numbers in Germany
 
