@@ -6,7 +6,7 @@ Germanvalid - A php tool to check the validity of any:
 
 (B) non geographically based phone numbers in Germany
 
-(C) private mobile operators phone numbers in Germany
+(C) private mobile operators mobile phone numbers in Germany
 
 (D) emergency and services based phone numbers in Germany 
 
