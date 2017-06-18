@@ -402,7 +402,44 @@
 				return $result;
 				  
 			}
+		
+	/**
+	* prints the category to which the phone number entered belongs to in Germany.
+	* @param string
+	* @return string
+	*/
 
-	}
+	public function printPhoneNumberType($input)	{
+
+		// removes all non digits
+		$input = preg_replace('~\D~','', $input);
+
+		if ($this->validate_geo_number($input) == true) {
+	
+			$message = "Valid German geographically based phone number format";
+	
+		} elseif ($this->validate_mobile_operator($input) == true) {
+				
+			$message = "Valid German commercial mobile phone number format";
+			
+		  } elseif ($this->validate_emergency($input) == true) {
+				
+			$message = "Valid German emergency/government service phone number format";
+			
+		   } elseif ($this->validate_non_geo($input) == true) {
+					
+			$message = "Valid German non-geographically based phone number format";
+	
+		   } else {
+		
+			$message = "Unknown German phone number format";
+		     }
+		
+		echo $message;
+		
+	 }
+		
+	
+    }
 
 ?>
