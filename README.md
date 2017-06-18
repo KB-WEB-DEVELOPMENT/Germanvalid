@@ -86,3 +86,30 @@ non-digits characters are removed before the validity of the phone number is eva
 
 		echo $validator->validate_emergency("118000"); // output: 0 (FALSE)
 	?>
+	
+3.5 ) printtPhoneNumberType(STRING $input)
+-------------------------------------------
+
+<?php
+
+	$validator =  new Germanvalid();
+
+	$validator->printPhoneNumberType("(089)-92396645"); //output: "Valid German geographically based phone number format"
+
+	echo "<br/>";
+	
+	$validator->printPhoneNumberType("(0152)-03917795"); //output: "Valid German commercial mobile phone number format"
+	
+	echo "<br/>";
+	
+	$validator->printPhoneNumberType("#19#222"); //output: "Valid German emergency/government service phone number format"
+	
+	echo "<br/>";
+	
+	$validator->printPhoneNumberType("0137-1234567894"); //output: "Valid German non-geographically based phone number format"
+	
+	echo "<br/>";
+	
+	$validator->printPhoneNumberType("(151)-03917795"); //output: "Unknown German phone number format"
+	
+?>
