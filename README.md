@@ -87,7 +87,7 @@ non-digits characters are removed before the validity of the phone number is eva
 		echo $validator->validate_emergency("118000"); // output: 0 (FALSE)
 	?>
 	
-3.5 ) printtPhoneNumberType(STRING $input)
+3.5 ) printPhoneNumberType(STRING $input)
 -------------------------------------------
 
         <?php
