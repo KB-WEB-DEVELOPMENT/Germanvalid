@@ -91,6 +91,8 @@ non-digits characters are removed before the validity of the phone number is eva
 -------------------------------------------
 
         <?php
+	
+		// in file: Germanvalid.php
 
 		$validator =  new Germanvalid();
 
