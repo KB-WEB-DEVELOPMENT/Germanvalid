@@ -200,7 +200,7 @@
 
 				if ($this->length < 4)  {
 		
-					$this->firstFourDigits = FIRST_FOUR_DIGITS; // wrong first four digits, used in switch statement below 
+					$this->firstFourDigits = self::FIRST_FOUR_DIGITS; // wrong first four digits, used in switch statement below 
 				} 
 				
 				if ($this->length == 4)  {
@@ -300,12 +300,12 @@
 					$this->firstFiveDigitsEntered = substr($this->input,0,5);
 				}	
 			
-				if ($this->firstFourDigitsEntered == MOBILE_EXCEPTION_1) {
+				if ($this->firstFourDigitsEntered == self::MOBILE_EXCEPTION_1) {
 
 					$this->result = false;
 				}
 				
-				if ($this->firstFiveDigitsEntered == MOBILE_EXCEPTION_2) {
+				if ($this->firstFiveDigitsEntered == self::MOBILE_EXCEPTION_2) {
 
 					$this->result = false;
 				}
@@ -323,15 +323,15 @@
 											
 				$this->input = preg_replace('~\D~','',$input);
 				
-				if (in_array($this->input, FIXED_NUMBERS)) {
+				if (in_array($this->input, self::FIXED_NUMBERS)) {
 					
 					$this->result = true;
 					
-				} elseif (preg_match(REGEX1, $this->input) == 1) {
+				} elseif (preg_match(self::REGEX1, $this->input) == 1) {
 					
 					$this->result = true;
 				
-				} elseif (preg_match(REGEX2, $this->input) == 1) {
+				} elseif (preg_match(self::REGEX2, $this->input) == 1) {
 					
 					$this->result = true;
 				
@@ -359,7 +359,7 @@
 									
 				if ($this->length < 3)  {
 		
-					$this->firstThreeDigits = FIRST_THREE_DIGITS; // incorrect first three digits, used in switch statement
+					$this->firstThreeDigits = self::FIRST_THREE_DIGITS; // incorrect first three digits, used in switch statement
 				} 
 					
 				$this->firstThreeDigits = substr($this->input,0,3);
@@ -410,19 +410,19 @@
 
 				}
 							
-				if (in_array($this->input, FIXED_FOUR_DIGITS_NUMBERS)) {
+				if (in_array($this->input, self::FIXED_FOUR_DIGITS_NUMBERS)) {
 					
 					$this->result = true;
 				
 				} 
 				
-				if ($this->input == FIXED_FIVE_CHAR_NUMBERS) {
+				if ($this->input == self::FIXED_FIVE_CHAR_NUMBERS) {
 					
 					$this->result = true;
 				
 				} 
 				
-				if ($input == FIXED_SIX_CHAR_NUMBERS) {
+				if ($input == self::FIXED_SIX_CHAR_NUMBERS) {
 					
 					$this->result = true;
 				
