@@ -31,7 +31,10 @@ non-digits characters are removed before the validity of the phone number is eva
 -----------------------------------------
 
     <?php	
-         	// in file: Germanvalid.php
+         	// in file: projectname/index.php
+		
+		require_once __DIR__ . '/vendor/autoload.php';
+		use KB-WEB-DEVELOPMENT\Germanvalid;
 
 		$validator =  new Germanvalid();
 
@@ -46,9 +49,11 @@ non-digits characters are removed before the validity of the phone number is eva
 -------------------------------------
 
 	<?php
-		// in file: Germanvalid.php
-
-		$validator =  new Germanvalid();
+		       
+         	// in file: projectname/index.php
+		
+		require_once __DIR__ . '/vendor/autoload.php';
+		use KB-WEB-DEVELOPMENT\Germanvalid;
 
 		echo $validator->validate_non_geo("01371234567894"); // output: 1 (TRUE)
 
@@ -61,7 +66,11 @@ non-digits characters are removed before the validity of the phone number is eva
 ----------------------------------------------
 
 	<?php
-		// in file: Germanvalid.php
+		
+         	// in file: projectname/index.php
+		
+		require_once __DIR__ . '/vendor/autoload.php';
+		use KB-WEB-DEVELOPMENT\Germanvalid;
 
 		$validator =  new Germanvalid();
 
@@ -76,7 +85,11 @@ non-digits characters are removed before the validity of the phone number is eva
 ---------------------------------------
 
 	<?php
-		// in file: Germanvalid.php
+		
+         	// in file: projectname/index.php
+		
+		require_once __DIR__ . '/vendor/autoload.php';
+		use KB-WEB-DEVELOPMENT\Germanvalid;
 
 		$validator =  new Germanvalid();
 
@@ -91,8 +104,11 @@ non-digits characters are removed before the validity of the phone number is eva
 -------------------------------------------
 
         <?php
-	
-		// in file: Germanvalid.php
+			
+         	// in file: projectname/index.php
+		
+		require_once __DIR__ . '/vendor/autoload.php';
+		use KB-WEB-DEVELOPMENT\Germanvalid;
 
 		$validator =  new Germanvalid();
 
