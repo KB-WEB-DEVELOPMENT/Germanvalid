@@ -77,7 +77,7 @@
 				$this->length = (int)strlen($this->input);
 				
 				// say length < 11 or length > 12, incorrect mobile number - needed for the switch statement 
-				$this->geographic_zone_number = GEOGRAPHIC_ZONE_NUMBER;
+				$this->geographic_zone_number = self::GEOGRAPHIC_ZONE_NUMBER;
 
 				// user included a geographic zone number, 11 digits total
 				if ($this->length == 11)  {
@@ -300,12 +300,12 @@
 					$this->firstFiveDigitsEntered = substr($this->input,0,5);
 				}	
 			
-				if ($this->firstFourDigitsEntered == self::MOBILE_EXCEPTION_1) {
+				if ($this->firstFourDigitsEntered === self::MOBILE_EXCEPTION_1) {
 
 					$this->result = false;
 				}
 				
-				if ($this->firstFiveDigitsEntered == self::MOBILE_EXCEPTION_2) {
+				if ($this->firstFiveDigitsEntered === self::MOBILE_EXCEPTION_2) {
 
 					$this->result = false;
 				}
@@ -387,16 +387,16 @@
 						$this->regex = '/^032[0-9]{9}$/';
 						break;
 					case '070':
-						$this->regex '/^0700[0-9]{8}$/';
+						$this->regex = '/^0700[0-9]{8}$/';
 						break;
 					case '080':
-						$this->regex '/^0800[0-9]{7}$/';
+						$this->regex = '/^0800[0-9]{7}$/';
 						break;
 					case '090':
-						$this->regex '/^09000(?=9)[0-9]{7}|[0-9]{7}$/';
+						$this->regex = '/^09000(?=9)[0-9]{7}|[0-9]{7}$/';
 						break;
 					default:
-						$this->regex '/^alwayswrong!!!!$/';
+						$this->regex = '/^alwayswrong!!!!$/';
 						break;						
 				}
 				
@@ -416,13 +416,13 @@
 				
 				} 
 				
-				if ($this->input == self::FIXED_FIVE_CHAR_NUMBERS) {
+				if ($this->input === self::FIXED_FIVE_CHAR_NUMBERS) {
 					
 					$this->result = true;
 				
 				} 
 				
-				if ($input == self::FIXED_SIX_CHAR_NUMBERS) {
+				if ($this->input === self::FIXED_SIX_CHAR_NUMBERS) {
 					
 					$this->result = true;
 				
