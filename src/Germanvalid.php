@@ -300,12 +300,12 @@
 					$this->firstFiveDigitsEntered = substr($this->input,0,5);
 				}	
 			
-				if ($this->firstFourDigitsEntered === self::MOBILE_EXCEPTION_1) {
+				if ($this->length == 11 && $this->firstFourDigitsEntered === self::MOBILE_EXCEPTION_1) {
 
 					$this->result = false;
 				}
 				
-				if ($this->firstFiveDigitsEntered === self::MOBILE_EXCEPTION_2) {
+				if ($this->length == 11 && $this->firstFiveDigitsEntered === self::MOBILE_EXCEPTION_2) {
 
 					$this->result = false;
 				}
