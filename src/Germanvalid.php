@@ -70,6 +70,14 @@
 			 */
 
 			public function validate_geo_number($input) {
+				
+				$input = trim($input);
+    
+				if (isset($input) === true && $input === '') {
+    
+				  die("You cannot enter an empty string. Your string must contain at least one character."); 
+  
+ 				}
 		
 				// removes all non digits
 				$this->input = preg_replace('~\D~','', $input);
@@ -192,6 +200,13 @@
 			 */
 
 			public function validate_mobile_operator($input) {
+				
+				$input = trim($input);
+    
+				if (isset($input) === true && $input === '') {
+    
+			          die("You cannot enter an empty string. Your string must contain at least one character."); 
+ 				}
 
 				// removes all non digits
 				$this->input = preg_replace('~\D~','', $input);
@@ -320,6 +335,13 @@
 			 */
 		
 			public function validate_emergency($input)	{
+				
+				$input = trim($input);
+    
+				if (isset($input) === true && $input === '') {
+    
+				  die("You cannot enter an empty string. Your string must contain at least one character."); 
+ 				}
 											
 				$this->input = preg_replace('~\D~','',$input);
 				
@@ -351,6 +373,14 @@
 			 */
 			
 			public function validate_non_geo($input) {
+				
+				$input = trim($input);
+    
+				if (isset($input) === true && $input === '') {
+    
+				  die("You cannot enter an empty string. Your string must contain at least one character."); 
+  
+ 				}
 			
 				// removes all non digits
 				$this->input = preg_replace('~\D~','', $input);
@@ -439,6 +469,13 @@
 	*/
 
 	public function printPhoneNumberType($input)	{
+		
+		$input = trim($input);
+    
+		if (isset($input) === true && $input === '') {
+    
+	           die("You cannot enter an empty string. Your string must contain at least one character."); 
+ 		}
 
 		// removes all non digits
 		$this->input = preg_replace('~\D~','', $input);
