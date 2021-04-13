@@ -176,7 +176,7 @@
 							
 				} 
 				// the user entered 9 digits, too few with the geographic zone number, too many without.
-				if ($thi->length == 9) {
+				if ($this->length == 9) {
 					
 					$this->result = false;
 				
