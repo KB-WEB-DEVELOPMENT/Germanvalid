@@ -63,7 +63,7 @@
 			
 				
 			 /**
-			 * returns whether the entered input is a valid assignable German geographic phone number 
+			 * returns whether the entered input is a valid assignable German landline phone number based on the geopraphic zone
 			 *[Government run and controlled]
 			 * @param string
 			 * @return bool
@@ -84,7 +84,7 @@
 			
 				$this->length = (int)strlen($this->input);
 				
-				// say length < 11 or length > 12, incorrect full number including the geograhpic zone number -- this is needed for the switch statement 
+				// say length < 11 or length > 12, incorrect landline phone number including the geographic zone number -- this is needed for the switch statement 
 				$this->geographic_zone_number = self::GEOGRAPHIC_ZONE_NUMBER;
 
 				// user included a geographic zone number, 11 digits total
@@ -193,7 +193,7 @@
 			}
 		
 			 /**
-			 * returns whether the entered input is a valid assignable German non-geographic mobile phone number 
+			 * returns whether the entered input is a valid assignable German mobile phone number 
 			 * tied to a registered mobile operator in Germany
 			 * @param string
 			 * @return bool
@@ -367,7 +367,7 @@
 			}
 			
 			 /**
-			 * returns whether the entered input is a valid German non-geographic phone number [Government run and controlled]
+			 * returns whether the entered input is a valid German landline phone number excluding the geographic zone
 			 * @param string
 			 * @return bool
 			 */
@@ -484,7 +484,7 @@
 
 		if ($this->validate_geo_number($this->input) == true) {
 	
-			$this->message = "Valid German geographically based phone number format";
+			$this->message = "Valid German landline phone number format including the geographic zone";
 	
 		} elseif ($this->validate_mobile_operator($this->input) == true) {
 				
@@ -496,7 +496,7 @@
 			
 		   } elseif ($this->validate_non_geo($this->input) == true) {
 					
-			$this->message = "Valid German non-geographically based phone number format";
+			$this->message = "Valid German landline phone number format excluding the geographic zone";
 	
 		   } else {
 		
