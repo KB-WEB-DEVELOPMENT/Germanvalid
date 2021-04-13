@@ -390,10 +390,12 @@
 				if ($this->length < 3)  {
 		
 					$this->firstThreeDigits = self::FIRST_THREE_DIGITS; // incorrect first three digits, used in switch statement
-				} 
-					
-				$this->firstThreeDigits = substr($this->input,0,3);
 				
+				} else {
+										
+					$this->firstThreeDigits = substr($this->input,0,3);
+				}
+					
 				switch($this->firstThreeDigits) {												
 					case '011':
 						$this->regex = '/^011[0-9]{1,9}$/';
