@@ -112,7 +112,7 @@ non-digits characters are removed before the validity of the phone number is eva
 
 		$validator =  new Germanvalid();
 
-		$validator->printPhoneNumberType("(089)-92396645"); //output: "Valid German geographically based phone number format"
+		$validator->printPhoneNumberType("(089)-92396645"); //output: "Valid German landline phone number format including the geographic zone"
 
 		echo "<br/>";
 	
@@ -124,7 +124,7 @@ non-digits characters are removed before the validity of the phone number is eva
 	
 		echo "<br/>";
 	
-		$validator->printPhoneNumberType("0137-1234567894"); //output: "Valid German non-geographically based phone number format"
+		$validator->printPhoneNumberType("0137-1234567894"); //output: "Valid German landline phone number format excluding the geographic zone"
 	
 		echo "<br/>";
 	
