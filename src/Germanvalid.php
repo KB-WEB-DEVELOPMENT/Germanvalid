@@ -84,7 +84,7 @@
 			
 				$this->length = (int)strlen($this->input);
 				
-				// say length < 11 or length > 12, incorrect mobile number - needed for the switch statement 
+				// say length < 11 or length > 12, incorrect full number including the geograhpic zone number -- this is needed for the switch statement 
 				$this->geographic_zone_number = self::GEOGRAPHIC_ZONE_NUMBER;
 
 				// user included a geographic zone number, 11 digits total
